@@ -1,5 +1,4 @@
 import React , {  useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import {  Button  } from '@material-ui/core';
 
@@ -15,7 +14,7 @@ export default function Header(props){
      function cabecalho(){ 
 
     
-          if(window.location.toString() != url){
+          if(window.location.toString() !== url){
                setTexto([ <h1>Typing Practice</h1>,
                     <h3 className="line-1 anim-typewriter">Practicing...</h3>,]) 
 
@@ -39,7 +38,7 @@ export default function Header(props){
 
      return(
           <header>
-               <div class="overlay">
+               <div className="overlay">
                     {texto}
                </div>
           </header>
